@@ -1,4 +1,5 @@
-The repository demonstrates Input Capture mode of ***STM32G0F6P6*** timer on example of Infra-Red NEC protocol
+The repository demonstrates working with WS2812B addressable RGB LED with STM32 Timer + DMA.
+***STM32G0F6P6*** was used in current example.
 
 ## How to build and flash (for Ubuntu)
 
@@ -8,11 +9,11 @@ The repository demonstrates Input Capture mode of ***STM32G0F6P6*** timer on exa
     ```
 1. Clone the project:
     ```bash
-    git clone https://github.com/Kotsiubynskyi/stm32g0_ir_nec.git
+    git clone https://github.com/Kotsiubynskyi/stm32g0_ws2812b.git
     ```
 1. Generate build files:
     ```bash
-    cd stm32g0_wled
+    cd stm32g0_ws2812b
     mkdir build
     cd build
     cmake .. -G Ninja
