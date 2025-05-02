@@ -8,9 +8,7 @@ void SystemClock_Config();
 void startWledTimer();
 
 uint8_t arr[] = {
-    1,1,1,1,1,1,1,1,  1,1,1,1,1,1,1,1,  1,1,1,1,1,1,1,1,
-    1,1,1,1,1,1,1,1,  1,1,1,1,1,1,1,1,  1,1,1,1,1,1,1,1,
-    1,1,1,1,1,1,1,1,  1,1,1,1,1,1,1,1,  1,1,1,1,1,1,1,1,
+    1,1,1,1,1,1,1,1,  3,3,3,3,3,3,3,3,  1,1,1,1,1,1,1,1,
 
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -32,102 +30,7 @@ int main()
 
   while (1)
   {
-    for (uint8_t i = 0; i < 2; i++)
-    {
-      for (uint8_t k = 7; k > 0; k--)
-      {
-        arr[i * 8 + k] = 3;
-        HAL_Delay(25);
-      }
-    }
-
-    for (uint8_t i = 1; i < 3; i++)
-    {
-      for (uint8_t k = 7; k > 0; k--)
-      {
-        arr[i * 8 + k] = 3;
-        HAL_Delay(25);
-      }
-    }
-
-    for (uint8_t i = 1; i < 3; i++)
-    {
-      for (uint8_t k = 7; k > 0; k--)
-      {
-        arr[i * 8 + k] = 1;
-        HAL_Delay(25);
-      }
-    }
-
-
-    
-
-
-
-    for (uint8_t i = 3; i < 4; i++)
-    {
-      for (uint8_t k = 7; k > 0; k--)
-      {
-        arr[i * 8 + k] = 3;
-        HAL_Delay(25);
-      }
-    }
-
-    for (uint8_t i = 4; i < 5; i++)
-    {
-      for (uint8_t k = 7; k > 0; k--)
-      {
-        arr[i * 8 + k] = 3;
-        HAL_Delay(25);
-      }
-    }
-
-    for (uint8_t i = 3; i < 6; i++)
-    {
-      for (uint8_t k = 7; k > 0; k--)
-      {
-        arr[i * 8 + k] = 1;
-        HAL_Delay(25);
-      }
-    }
-
-
-
-
-
-
-
-    for (uint8_t i = 7; i < 9; i++)
-    {
-      for (uint8_t k = 7; k > 0; k--)
-      {
-        arr[i * 8 + k] = 3;
-        HAL_Delay(25);
-      }
-    }
-
-    for (uint8_t i = 6; i < 7; i++)
-    {
-      for (uint8_t k = 7; k > 0; k--)
-      {
-        arr[i * 8 + k] = 3;
-        HAL_Delay(25);
-      }
-    }
-
-    for (uint8_t i = 6; i < 9; i++)
-    {
-      for (uint8_t k = 7; k > 0; k--)
-      {
-        arr[i * 8 + k] = 1;
-        HAL_Delay(25);
-      }
-    }
-
-
-
-
-
+    HAL_Delay(100);
   }
 
   return 0;
